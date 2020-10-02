@@ -26,27 +26,11 @@ const UserList: React.FC = () => {
             <UserRow nickname='Rodrigo Carneiro' />
 
             <Role>Offline - 1</Role>
-            <UserRow nickname='Vanessa Floquinha' isBot />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
-            <UserRow nickname='Vanessa Floquinha' />
+            <UserRow nickname='User 0' isBot />
+
+            {Array.from(Array(15).keys()).map((n, i) => (
+                <UserRow nickname={`User ${i + 1}`} />
+            ))}
 
         </Container>
     );
